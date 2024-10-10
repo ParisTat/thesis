@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<!-- Καθορίζει την προβολή της ιστοσελίδας σε φορητές συσκευές -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Τίτλος της ιστοσελίδας -->
+	<title>Black Holes </title>
+	<!-- Σύνδεση με το εξωτερικό CSS αρχείο -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Σύνδεση με το Swup library -->
+	<script src="node_modules/swup/dist/swup.min.js" ></script>
+	<!-- Σύνδεση με το εξωτερικό JavaScript αρχείο -->
+	<script defer src="/helpers/script.js"></script>
+</head>
+
+<body>
+
+	<div class="hero">
+		<nav>
+			<!-- Σύνδεσμος με την ιστοσελίδα του ΕΜΠ -->
+			<a href="https://www.ntua.gr/el/" target="_blank"><img src="images/ΣΗΜΑ-ΕΜΠ-No BG.png" class="logo"></a>
+			<ul>
+				<!-- Σύνδεσμος για την αρχική σελίδα με μορφοποίηση-->
+				<li><a href="Main.html"><u><b>Home</b></u></a></li>
+				<!-- Σύνδεσμος για τη σελίδα "About" -->
+				<li><a href="pages/About.html">About</a></li>
+				<!-- Σύνδεσμος για τη σελίδα "Contact" -->
+				<li><a href="pages/Contact.html">Contact</a></li>
+				<!-- Σύνδεσμος για τη σελίδα "Quiz" -->
+				<li><a href="pages/Quiz.html">Quiz</a></li>
+				<!-- Σύνδεσμος για τη σελίδα "Login" -->
+				<li><a href="pages/Login.html">Login</a></li>
+
+
+
+			</ul>
+		</nav>
+
+		<div class="container1" id="transitionIn">
+		<!-- Τίτλος της ενότητας -->	
+		<h1>Into the Black Holes</h1>
+
+		<!-- Φόρμα για παραπομπή στο YouTube -->	
+		<form action="https://youtu.be/hu6hIhW00Fk?feature=shared" target="_blank">
+
+			<button>
+				Explore the Darkness
+			</button>
+
+		</form>
+
+		<!-- Ενδείξεις ενεργής σελίδας, βλέπε κουκίδα -->
+		<div class="indicator">
+			<span class="active"></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		
+		</div>
+
+		<div class="cta">
+			<p>Come with me in a deep space exploration!</p>
+			<button type="button" id="quiz-button">Let's play &#x27F6</button>
+		</div>
+	</div>
+
+</body>
+
+</html>

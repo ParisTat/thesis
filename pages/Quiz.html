@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<head>
+            <!-- Καθορίζει την προβολή της ιστοσελίδας σε φορητές συσκευές -->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- Τίτλος της ιστοσελίδας -->
+            <title>Quiz </title>
+            <!-- Σύνδεση με το εξωτερικό CSS αρχείο -->
+            <link rel="stylesheet" type="text/css" href="../style.css">
+            <!-- Σύνδεση με το Swup library -->
+            <script src="node_modules/swup/dist/swup.min.js"></script>
+            <!-- Σύνδεση με το εξωτερικό JavaScript αρχείο -->
+            <script defer src="/helpers/script.js"></script>
+        </head>
+
+<body onload="NextQuestion(0)">
+    <main>
+        <div class="hero">
+		<nav>
+			<a href="https://www.ntua.gr/el/" target="_blank"><img src="../images/ΣΗΜΑ-ΕΜΠ-No BG.png" class="logo"></a>
+			<ul>
+				<li><a href="../Main.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+                <li><a href="Quiz.html"><u><b>Quiz</b></u></a></li>
+				<li><a href="Login.html">Login</a></li>
+				
+
+
+			</ul>
+		</nav>
+
+	    <div class="container1" id="transitionIn">
+            <h2>HTML Quiz</h2>
+
+        <!-- Δημιουργία ενός modal για όταν τελειώνει το Quiz -->
+        <div class="modal-container" id="score-modal">
+
+            <div class="modal-content-container">
+
+                <h1>Συγχαρητήρια! Ολοκληρώσατε το Quiz.</h1>
+
+                <!-- Λεπτομέρειες για τη διεξαγωγή του Quiz -->
+                <div class="grade-details">
+                    <p>Προσπάθειες : 10</p>
+                    <p>Λάθος Απαντήσεις : <span id="wrong-answers"></span></p>
+                    <p>Σωστές Απαντήσεις : <span id="right-answers"></span></p>
+                    <p>Βαθμός : <span id="grade-percentage"></span>%</p>
+                    <p ><span id="remarks"></span></p>
+                </div>
+
+                <!-- Κουμπί για να συνεχίσει ο χρήστης -->
+                <div class="modal-button-container">
+                    <button onclick="closeScoreModal()">Επανεκκίνηση Quiz</button>
+                </div>
+
+            </div>
+        </div> 
+        <!-- Τέλος modal των λεπτομερειών του Quiz -->
+
+        <!-- Ενότητα με λεπτομέρειες του παιχνιδιού και την ερώτηση -->
+        <div class="game-quiz-container">
+
+            <div class="game-details-container">
+                <h1>Σωστά : <span id="player-score"></span> / 10</h1>
+                <h1> Ερώτηση : <span id="question-number"></span> / 10</h1>
+            </div>
+
+            <div class="game-question-container">
+                <h1 id="display-question"></h1>
+            </div>
+
+            <!-- Δημιουργία ενός modal για την επιλογή απαντήσεων -->
+            <div class="game-options-container">
+
+               <div class="modal-container" id="option-modal">
+
+                    <div class="modal-content-container">
+                         <h1>Παρακαλώ επιλέξτε μία επιλογή</h1>
+
+                         <div class="modal-button-container">
+                            <button onclick="closeOptionModal()">Συνέχεια</button>
+                        </div>
+
+                    </div>
+
+               </div>
+
+               <!-- Επιλογές απαντήσεων -->
+                <span>
+                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                    <label for="option-one" class="option" id="option-one-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                    <label for="option-two" class="option" id="option-two-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                    <label for="option-three" class="option" id="option-three-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                    <label for="option-four" class="option" id="option-four-label"></label>
+                </span>
+
+
+            </div>
+
+            <!-- Κουμπί για την επόμενη ερώτηση -->
+            <div class="next-button-container">
+                <button onclick="handleNextQuestion()">Επόμενη ερώτηση</button>
+            </div>
+
+
+
+            </div>
+        </div>    
+    </main>
+    <!-- Σύνδεση με το JavaScript αρχείο του Quiz -->
+    <script src="../helpers/quiz.js"></script>
+</body>
+</html>
