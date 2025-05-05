@@ -10,7 +10,7 @@
 		<!-- Σύνδεση με το Swup library -->
 		<script src="node_modules/swup/dist/swup.min.js"></script>
 		<!-- Σύνδεση με το εξωτερικό JavaScript αρχείο -->
-		<script defer src="/helpers/script.js"></script>
+		<script defer src="/helpers/burger.js"></script>
 	</head>
 
 <body>
@@ -18,19 +18,24 @@
 	<div class="hero">
 		<nav>
 			<a href="https://www.ntua.gr/el/" target="_blank"><img src="../images/ΣΗΜΑ-ΕΜΠ-No BG.png" class="logo"></a>
-			<ul>
+			<!-- Αλλαγή σε span για ευκολότερο styling -->
+			<button class="menu-toggle" aria-label="Κλείσιμο μενού" aria-expanded="false">
+				<span class="hamburger"></span>
+			</button>
+			<ul class="nav-links">
 				<li><a href="../index.html">Home</a></li>
 				<li><a href="About.html">About</a></li>
 				<li><a href="Contact.html">Contact</a></li>
-				<!-- Σύνδεσμος για τη σελίδα "Quiz" -->
 				<li><a href="Quiz.html">Quiz</a></li>				
-				<li><a href="Thesis.html"><u><b>Thesis</b></u></a></li>
+				<li><a href="index.html" class="active-page">Thesis</a></li>
 			</ul>
+			<!-- Overlay για blur effect -->
+			<div class="overlay"></div>
 		</nav>
 
-		<div class="container1" id="transitionIn">
+		<div class="container2" id="transitionIn">
 
-		<h1>Διπλωματική εργασία</h1>
+		<h4>Διπλωματική εργασία</h4>
 
 				<br>
 		
@@ -39,23 +44,12 @@
 			src="../main.pdf" id="myPDF" frameborder="0">
 		</iframe>
 
-		<div class="indicator">
-			<span></span>
-			<span></span>
-			<span></span>
-			<span></span>
-			<span class="active"></span>
-		</div>
 	</div>
 
-		<!--
-		<div class="cta">
-			<p>Come with me in a deep space exploration!</p>
-			<button type="button">Let's play &#x27F6</button>
-		</div>
-		-->
-
-
+	<footer>
+		<p></p>
+	</footer>
+	<script src="helpers/burger.js"></script>
 </body>
 
 </html>

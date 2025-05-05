@@ -11,27 +11,32 @@
             <!-- Σύνδεση με το Swup library -->
             <script src="node_modules/swup/dist/swup.min.js"></script>
             <!-- Σύνδεση με το εξωτερικό JavaScript αρχείο -->
-            <script defer src="/helpers/script.js"></script>
+            <script defer src="../helpers/script.js"></script>
         </head>
 
 <body onload="NextQuestion(0)">
     <main>
         <div class="hero">
+
 		<nav>
+
 			<a href="https://www.ntua.gr/el/" target="_blank"><img src="../images/ΣΗΜΑ-ΕΜΠ-No BG.png" class="logo"></a>
-			<ul>
+
+			<button class="menu-toggle" aria-label="Κλείσιμο μενού" aria-expanded="false">
+				<span class="hamburger"></span>
+			</button>
+
+            <ul>
 				<li><a href="../index.html">Home</a></li>
 				<li><a href="About.html">About</a></li>
 				<li><a href="Contact.html">Contact</a></li>
-                <li><a href="Quiz.html"><u><b>Quiz</b></u></a></li>
+                <li><a href="Quiz.html" class="active-page">Quiz</a></li>
 				<li><a href="Thesis.html">Thesis</a></li>
-				
-
-
-			</ul>
+				</ul>
+                <div class="overlay"></div>
 		</nav>
 
-	    <div class="container1" id="transitionIn">
+	    <div class="container2" id="transitionIn">
             <h2>HTML Quiz</h2>
 
         <!-- Δημιουργία ενός modal για όταν τελειώνει το Quiz -->

@@ -1,2 +1,2 @@
 // Δημιουργία μιας νέας εισαγωγής του Swup για την ανανέωση των σελίδων χωρίς ανανέωση του browser.
-const swup = new Swup()
+//const swup = new Swup()
