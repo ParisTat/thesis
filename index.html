@@ -8,9 +8,9 @@
 	<!-- Σύνδεση με το εξωτερικό CSS αρχείο -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<!-- Σύνδεση με το Swup library -->
-	<script src="node_modules/swup/dist/swup.min.js" ></script>
+	<script src="node_modules/swup/dist/swup.min.js" ></script> 
 	<!-- Σύνδεση με το εξωτερικό JavaScript αρχείο -->
-	<script defer src="/helpers/burger.js"></script>
+	<script defer src="helpers/burger.js"></script>
 </head>
 
 <body>
@@ -20,11 +20,12 @@
 			<!-- Σύνδεσμος με την ιστοσελίδα του ΕΜΠ -->
 			<a href="https://www.ntua.gr/el/" target="_blank"><img src="images/ΣΗΜΑ-ΕΜΠ-No BG.png" class="logo"></a>
 
-			<button class="menu-toggle" aria-label="Toggle menu">
+			<!-- Burger κουμπί -->
+			<button class="menu-toggle" aria-label="Κλείσιμο μενού" aria-expanded="false">
 				<span class="hamburger"></span>
 			</button>
 
-			<ul>
+			<ul class="nav-links">
 				<!-- Σύνδεσμος για την αρχική σελίδα με μορφοποίηση-->
 				<li><a href="index.html" class="active-page">Home</a></li>
 				<!-- Σύνδεσμος για τη σελίδα "About" -->
@@ -36,6 +37,7 @@
 				<!-- Σύνδεσμος για τη σελίδα "Thesis" -->
 				<li><a href="pages/Thesis.html">Thesis</a></li>
 			</ul>
+			<!-- Overlay για blur effect -->
 			<div class="overlay"></div>
 		</nav>
 
@@ -52,22 +54,26 @@
 
 		</form>
 
-		<!-- Ενδείξεις ενεργής σελίδας, βλέπε κουκίδα -->
+		<!-- Ενδείξεις ενεργής σελίδας, βλέπε κουκίδα 
 		<div class="indicator">
 			<span class="active"></span>
 			<span></span>
 			<span></span>
 			<span></span>
 		</div>
+		-->
 		
 		</div>
 
 		<div class="cta">
 			<p>Come with me in a deep space exploration!</p>
-			<a href="pages/Quiz.html"><button type="button" id="quiz-button">Let's play &#x27F6</button></a>
+			<a href="pages/Quiz.html">
+				<button type="button" id="quiz-button">Let's play &#x27F6</button>
+			</a>
 		</div>
 	</div>
-	<script src="helpers/burger.js"></script>
+
+	<!-- <script src="helpers/burger.js"></script> -->
 </body>
 
 </html>

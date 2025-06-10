@@ -126,8 +126,11 @@ nav ul li a:hover {
     }
 
     .menu-toggle {
-        display: block;
+        display: flex;
         z-index: 20;
+    }
+    .overlay {
+        display: none;
     }
 }
 
@@ -343,6 +346,7 @@ body {
 
 .game-details-container h1{
     font-size: 1.2rem;
+    margin: auto;
 }
 
 .game-question-container{

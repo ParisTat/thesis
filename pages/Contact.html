@@ -10,15 +10,22 @@
 		<!-- Σύνδεση με το Swup library -->
 		<script src="node_modules/swup/dist/swup.min.js"></script>
 		<!-- Σύνδεση με το εξωτερικό JavaScript αρχείο -->
-		<script defer src="/helpers/script.js"></script>
+		<script defer src="../helpers/burger.js"></script>
 	</head>
 
 <body>
 
 	<div class="hero">
 		<nav>
+			<!-- Σύνδεσμος με την ιστοσελίδα του ΕΜΠ -->
 			<a href="https://www.ntua.gr/el/" target="_blank"><img src="../images/ΣΗΜΑ-ΕΜΠ-No BG.png" class="logo"></a>
-			<ul>
+
+			<!-- Αλλαγή σε span για ευκολότερο styling -->
+			<button class="menu-toggle" aria-label="Κλείσιμο μενού" aria-expanded="false">
+				<span class="hamburger"></span>
+			</button>
+
+			<ul class="nav-links">
 				<li><a href="../index.html">Home</a></li>
 				<li><a href="About.html">About</a></li>
 				<li><a href="Contact.html" class="active-page">Contact</a></li>
@@ -26,6 +33,7 @@
 				<li><a href="Quiz.html">Quiz</a></li>				
 				<li><a href="Thesis.html">Thesis</a></li>
 			</ul>
+			<div class="overlay"></div>
 		</nav>
 
 		<div class="container1" id="transitionIn">

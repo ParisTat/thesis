@@ -9,7 +9,7 @@
             <!-- Σύνδεση με το εξωτερικό CSS αρχείο -->
             <link rel="stylesheet" type="text/css" href="../style.css">
             <!-- Σύνδεση με το Swup library -->
-            <script src="node_modules/swup/dist/swup.min.js"></script>
+            <!-- <script src="node_modules/swup/dist/swup.min.js"></script>-->
             <!-- Σύνδεση με το εξωτερικό JavaScript αρχείο -->
             <script defer src="../helpers/script.js"></script>
         </head>
@@ -19,21 +19,23 @@
         <div class="hero">
 
 		<nav>
-
+			<!-- Σύνδεσμος με την ιστοσελίδα του ΕΜΠ -->
 			<a href="https://www.ntua.gr/el/" target="_blank"><img src="../images/ΣΗΜΑ-ΕΜΠ-No BG.png" class="logo"></a>
 
+			<!-- Burger κουμπί -->
 			<button class="menu-toggle" aria-label="Κλείσιμο μενού" aria-expanded="false">
 				<span class="hamburger"></span>
 			</button>
 
-            <ul>
+			<ul class="nav-links">
 				<li><a href="../index.html">Home</a></li>
 				<li><a href="About.html">About</a></li>
 				<li><a href="Contact.html">Contact</a></li>
                 <li><a href="Quiz.html" class="active-page">Quiz</a></li>
 				<li><a href="Thesis.html">Thesis</a></li>
 				</ul>
-                <div class="overlay"></div>
+            <!-- Overlay για blur effect -->
+			<div class="overlay"></div>
 		</nav>
 
 	    <div class="container2" id="transitionIn">
@@ -118,7 +120,8 @@
 
 
             </div>
-
+            <br>
+            <br>
             <!-- Κουμπί για την επόμενη ερώτηση -->
             <div class="next-button-container">
                 <button onclick="handleNextQuestion()">Επόμενη ερώτηση</button>
@@ -129,7 +132,10 @@
             </div>
         </div>    
     </main>
+    
     <!-- Σύνδεση με το JavaScript αρχείο του Quiz -->
     <script src="../helpers/quiz.js"></script>
+    <!-- Σύνδεση με το JavaScript αρχείο του Burger Menu -->
+    <script src="../helpers/burger.js"></script>
 </body>
 </html>
