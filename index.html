@@ -10,9 +10,10 @@
 	<!-- Σύνδεση με το εξωτερικό CSS αρχείο -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<!-- Σύνδεση με το Swup library -->
-	<script src="node_modules/swup/dist/swup.min.js" ></script> 
+	<!--<script src="node_modules/swup/dist/swup.min.js" ></script> -->
 	<!-- Σύνδεση με το εξωτερικό JavaScript αρχείο -->
 	<script defer src="helpers/burger.js"></script>
+	<script defer src="helpers/homepage_slider.js"></script>
 </head>
 
 <body>
@@ -56,26 +57,56 @@
 
 		</form>
 
-		<!-- Ενδείξεις ενεργής σελίδας, βλέπε κουκίδα 
-		<div class="indicator">
-			<span class="active"></span>
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		-->
-		
+		<br>
+		<br>
+
+		<h2>
+			Τι θα βρεις εδώ
+		</h2>
+
+		<br>
+		<br>
+
+		<section class="homepage-slider">
+				<div class="slides-container">
+					<div class="slide active">
+						<h3>🎓 Quiz για εξάσκηση</h3>
+						<p>Δοκίμασε τις γνώσεις σου σε ερωτήσεις που σχετίζονται με το περιεχόμενο της πτυχιακής.</p>
+						<a href="pages/Quiz.html" class="slide-button">Ξεκίνησε το Quiz</a>
+					</div>
+
+					<div class="slide">
+						<h3>📘 Πτυχιακή Εργασία</h3>
+						<p>Δες τη θεωρία, τις εξισώσεις και τα αποτελέσματα της μελέτης γύρω από τις μαύρες τρύπες.</p>
+						<a href="pages/Thesis.html" class="slide-button">Δες την Πτυχιακή</a>
+					</div>
+
+					<div class="slide">
+						<h3>✉️ Επικοινώνησε μαζί μου</h3>
+						<p>Έχεις απορίες ή θέλεις να επικοινωνήσεις; Μη διστάσεις.</p>
+						<a href="pages/Contact.html" class="slide-button">Στείλε μήνυμα</a>
+					</div>
+				</div>
+
+				<div class="slider-nav">
+					<button class="prev">&#10094;</button>
+					<button class="next">&#10095;</button>
+				</div>
+			</section>
 		</div>
 
-		<div class="cta">
+		<!--<div class="cta">
 			<p>Come with me in a deep space exploration!</p>
 			<a href="pages/Quiz.html">
 				<button type="button" id="quiz-button">Let's play &#x27F6</button>
 			</a>
-		</div>
+		</div>-->
 	</div>
 
-	<!-- <script src="helpers/burger.js"></script> -->
+	<footer class="site-footer">
+		<p>Created by Paris &mdash; <a href="https://www.linkedin.com/in/paris-rafail-tataridis-494767231/" target="_blank">LinkedIn</a></p>
+	</footer>
+	
 </body>
 
 </html>

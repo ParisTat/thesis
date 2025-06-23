@@ -9,10 +9,11 @@
 		<link rel="icon" type="image/x-icon" href="../images/black-hole-color.ico">
 		<!-- Σύνδεση με το εξωτερικό CSS αρχείο -->
 		<link rel="stylesheet" type="text/css" href="../style.css">
-		<!-- Σύνδεση με το Swup library -->
+		<!-- Σύνδεση με το Swup library 
 		<script src="node_modules/swup/dist/swup.min.js"></script>
 		<!-- Σύνδεση με το εξωτερικό JavaScript αρχείο -->
 		<script defer src="../helpers/burger.js"></script>
+		<script defer src="../helpers/contact_form.js"></script>
 	</head>
 
 <body>
@@ -42,28 +43,29 @@
 
 		<h1>Contact</h1>
 
-		<form action="https://youtu.be/hu6hIhW00Fk?feature=shared" target="_blank">
+		<p>Στείλε μου το μήνυμά σου για ερωτήσεις, παρατηρήσεις ή συνεργασίες!</p>
 
-			<button>
-				Explore the Darkness
-			</button>
+			<form id="contactForm" class="contact-form">
+				<label for="name">Όνομα:</label>
+				<input type="text" id="name" name="name" required>
 
-		</form>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
 
-		<div class="indicator">
-			<span></span>
-			<span></span>
-			<span class="active"></span>
-			<span></span>
+				<label for="message">Μήνυμα:</label>
+				<textarea id="message" name="message" rows="5" required></textarea>
+
+				<button type="submit">Αποστολή</button>
+			</form>
+			<div id="form-status" style="margin-top: 1rem;"></div>
+				
 		</div>
+
 	</div>
 
-		<div class="cta">
-			<p>Come with me in a deep space exploration!</p>
-			<button type="button">Let's play &#x27F6</button>
-		</div>
-
-
+		<footer class="site-footer">
+			<p>Created by Paris &mdash; <a href="https://www.linkedin.com/in/paris-rafail-tataridis-494767231/" target="_blank">LinkedIn</a></p>
+		</footer>
 </body>
 
 </html>
