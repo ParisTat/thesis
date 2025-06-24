@@ -31,7 +31,7 @@
 /* --- Εφαρμόζεται μόνο στην αρχική σελίδα --- */
 .home-hero {
   background: url('images/black-hole-ani.gif') no-repeat center top;
-  background-size: 50%;
+  
   background-color: black;
   min-height: 100vh;
   display: flex;
