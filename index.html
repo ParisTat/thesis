@@ -14,11 +14,12 @@
 	<!-- Σύνδεση με το εξωτερικό JavaScript αρχείο -->
 	<script defer src="helpers/burger.js"></script>
 	<script defer src="helpers/homepage_slider.js"></script>
+	<script defer src="helpers/home_slider.js"></script>
 </head>
 
 <body>
 
-	<div class="hero">
+	<div class="hero home-hero">
 		<nav>
 			<!-- Σύνδεσμος με την ιστοσελίδα του ΕΜΠ -->
 			<a href="https://www.ntua.gr/el/" target="_blank"><img src="images/ΣΗΜΑ-ΕΜΠ-No BG.png" class="logo"></a>
@@ -46,61 +47,63 @@
 
 		<div class="container1" id="transitionIn">
 		<!-- Τίτλος της ενότητας -->	
-		<h1>Into the Black Holes</h1>
+		<h1 align="center">Into the Black Holes</h1>
 
 		<!-- Φόρμα για παραπομπή στο YouTube -->	
-		<form action="https://youtu.be/hu6hIhW00Fk?feature=shared" target="_blank">
+		<form action="https://youtu.be/hu6hIhW00Fk?feature=shared" target="_blank" align="center">
 
-			<button>
+			<button >
 				Explore the Darkness
 			</button>
 
 		</form>
-
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
 		<br>
 		<br>
 
-		<h2>
+	</div>
+	<div>
+		<h2 align="center" padding="10">
 			Τι θα βρεις εδώ
 		</h2>
+		<section class="fullpage-slider">
+		
+ 			<div class="fp-slide" style="background-image: url('images/quiz-bg.jpg');">
+    			<div class="slide-content">
+     				<h2>🎓 Quiz για εξάσκηση</h2>
+     				<p>Δοκίμασε τις γνώσεις σου με ερωτήσεις σχετικές με τη θεωρία των μαύρων τρυπών.</p>
+      				<a href="pages/Quiz.html" class="slide-button">Ξεκίνησε το Quiz</a>
+    			</div>
+    		</div>
 
-		<br>
-		<br>
+  			<div class="fp-slide" style="background-image: url('images/thesis-bg.jpg');">
+    			<div class="slide-content">
+      				<h2>📘 Πτυχιακή Εργασία</h2>
+      				<p>Δες θεωρία, εξισώσεις και αριθμητικά αποτελέσματα από την εργασία.</p>
+      				<a href="pages/Thesis.html" class="slide-button">Μελέτησε</a>
+    			</div>
+    		</div>
 
-		<section class="homepage-slider">
-				<div class="slides-container">
-					<div class="slide active">
-						<h3>🎓 Quiz για εξάσκηση</h3>
-						<p>Δοκίμασε τις γνώσεις σου σε ερωτήσεις που σχετίζονται με το περιεχόμενο της πτυχιακής.</p>
-						<a href="pages/Quiz.html" class="slide-button">Ξεκίνησε το Quiz</a>
-					</div>
+  			<div class="fp-slide" style="background-image: url('images/contact-bg.jpg');">
+    			<div class="slide-content">
+      				<h2>✉️ Επικοινώνησε μαζί μου</h2>
+		      	<p>Έχεις απορίες ή προτάσεις; Μη διστάσεις να έρθεις σε επαφή.</p>
+      			<a href="pages/Contact.html" class="slide-button">Επικοινωνία</a>
+    			</div>
+    	 	</div>
 
-					<div class="slide">
-						<h3>📘 Πτυχιακή Εργασία</h3>
-						<p>Δες τη θεωρία, τις εξισώσεις και τα αποτελέσματα της μελέτης γύρω από τις μαύρες τρύπες.</p>
-						<a href="pages/Thesis.html" class="slide-button">Δες την Πτυχιακή</a>
-					</div>
+		</section>
+			<div class="dot-nav">
+  				<span class="dot" data-index="0"></span>
+  				<span class="dot" data-index="1"></span>
+  				<span class="dot" data-index="2"></span>
+			</div>
 
-					<div class="slide">
-						<h3>✉️ Επικοινώνησε μαζί μου</h3>
-						<p>Έχεις απορίες ή θέλεις να επικοινωνήσεις; Μη διστάσεις.</p>
-						<a href="pages/Contact.html" class="slide-button">Στείλε μήνυμα</a>
-					</div>
-				</div>
-
-				<div class="slider-nav">
-					<button class="prev">&#10094;</button>
-					<button class="next">&#10095;</button>
-				</div>
-			</section>
-		</div>
-
-		<!--<div class="cta">
-			<p>Come with me in a deep space exploration!</p>
-			<a href="pages/Quiz.html">
-				<button type="button" id="quiz-button">Let's play &#x27F6</button>
-			</a>
-		</div>-->
 	</div>
 
 	<footer class="site-footer">
