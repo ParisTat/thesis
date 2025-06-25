@@ -10,8 +10,6 @@
 		<link rel="icon" type="image/x-icon" href="../images/black-hole-color.ico">
 		<!-- Σύνδεση με το εξωτερικό CSS αρχείο -->
 		<link rel="stylesheet" type="text/css" href="../style.css">
-		<!-- Σύνδεση με το Swup library -->
-		<script src="node_modules/swup/dist/swup.min.js"></script>
 		<!-- Σύνδεση με το εξωτερικό JavaScript αρχείο -->
 		<script defer src="../helpers/burger.js"></script>
 	</head>
@@ -20,6 +18,8 @@
 <body>
 
 	<div class="hero">
+
+		
 		<nav>
 			<!-- Σύνδεσμος με την ιστοσελίδα του ΕΜΠ -->
 			<a href="https://www.ntua.gr/el/" target="_blank"><img src="../images/ΣΗΜΑ-ΕΜΠ-No BG.png" class="logo"></a>
@@ -34,42 +34,90 @@
 				<li><a href="../index.html">Home</a></li>
 				<!-- Σύνδεσμος για τη σελίδα "About" με μορφοποίηση -->
 				<li><a href="About.html"class="active-page">About</a></li>
-				<!-- Σύνδεσμος για τη σελίδα "Contact" -->
-				<li><a href="Contact.html">Contact</a></li>
 				<!-- Σύνδεσμος για τη σελίδα "Quiz" -->
 				<li><a href="Quiz.html">Quiz</a></li>				
 				<!-- Σύνδεσμος για τη σελίδα "Thesis" -->
 				<li><a href="Thesis.html">Thesis</a></li>
+				<!-- Σύνδεσμος για τη σελίδα "Contact" -->
+				<li><a href="Contact.html">Contact</a></li>
 			</ul>
+
 			<!-- Overlay για blur effect -->
 			<div class="overlay"></div>
 		</nav>
 
-		<div class="container1" id="transitionIn">
-			<!-- Τίτλος της ενότητας -->
-			<h1>About</h1>
-			<!-- Φόρμα για παραπομπή στο YouTube -->
-			<form action="https://youtu.be/hu6hIhW00Fk?feature=shared" target="_blank">
-				<button>
-					Explore the Darkness
-				</button>
-			</form>
-			<!-- Ενδείξεις ενεργής σελίδας, βλέπε κουκίδα -->
-			<!-- <div class="indicator">
-				<span></span>
-				<span class="active"></span>
-				<span></span>
-				<span></span>
-			</div>-->
-		</div>
 
-		<div class="cta">
-			<!-- Κείμενο για την προσκλητήρια για το Quiz -->
-			<p>Come with me in a deep space exploration!</p>
-			<button type="button">Let's play &#x27F6</button>
-		</div>
+		<!-- Εισαγωγικό Hero Text -->
+		<div class="container1 about-section" id="transitionIn">
+			<h1>About the Project</h1>
+				<p>
+        			An interactive website designed to simplify and visualize complex astrophysical concepts surrounding black holes. Built as part of my undergraduate thesis.
+      			</p>
+    	</div>
+	
 
+	<!-- About Section με τις κάρτες -->
+  	<div class="about-grid">
+
+    		<!-- Card: Purpose -->
+			<div class="about-card">
+      			<h2>🚀 Purpose</h2>
+      			<p>
+        			This website was created as part of my thesis, aiming to provide an interactive and educational experience about black holes.
+        			It combines scientific theory with user-friendly navigation and engaging content.
+      			</p>
+    		</div>
+
+			<!-- Card: Technologies -->
+    		<div class="about-card">
+      			<h2>🛠️ Technologies</h2>
+      			<ul>
+       	 			<li>HTML5</li>
+        			<li>CSS3 (Custom, Responsive)</li>
+        			<li>Vanilla JavaScript</li>
+      			</ul>
+    		</div>
+
+			<!-- Card: Structure -->
+    		<div class="about-card">
+      			<h2>📁 Structure</h2>
+      			<p>
+        			The website consists of five main sections:<br>
+        			<strong>Home</strong>, <strong>About</strong>, <strong>Thesis</strong>, <stron>Quiz</strong> and <strong>Contact</strong>.
+      			</p>
+    		</div>
+
+			<!-- Card: Tools & Credits -->
+    		<div class="about-card">
+      			<h2>🎨 Tools & Credits</h2>
+      			<p>
+        			Built using Visual Studio Code.<br>
+        			Graphics and assets were generated via Photoshop and AI-based tools.<br>
+        			Scientific content based on academic research in black hole physics.
+      			</p>
+    		</div>
+
+			<!-- Card: Design Approach (Extra Card 1) -->
+			<div class="about-card">
+        		<h2>🎯 Design Approach</h2>
+        		<p>
+          			The website adopts a minimal, clean aesthetic with an emphasis on readability.
+          			Techniques like glassmorphism, smooth transitions, and responsive layouts were applied to enhance the user experience.
+        		</p>
+      		</div>
+
+			<!-- Card: Future Improvements (Extra Card 2) -->
+     		<div class="about-card">
+       			<h2>🚧 Future Improvements</h2>
+        		<p>
+          			Possible upgrades include adding more interactive simulations, deeper quizzes with scoring, integration of more dynamic visualizations, and multilingual support.
+        		</p>
+		    </div>
+
+
+  		</div>
 	</div>
+
 	
 	<footer class="site-footer">
 		<p>Created by Paris &mdash; <a href="https://www.linkedin.com/in/paris-rafail-tataridis-494767231/" target="_blank">LinkedIn</a></p>

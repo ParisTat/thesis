@@ -636,6 +636,92 @@ input[type="radio"]:checked + label {
   background-color: #222;
 }
 
+/*Μορφοποιήσεις του About*/
+.about-section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* About Title */
+.about-section h1 {
+  margin-bottom: 3rem;
+  color: white;
+  font-size: 2.5rem;
+}
+
+/* Εισαγωγικό κείμενο */
+.about-section p {
+  margin-bottom: 2rem;
+  color: white;
+}
+
+/* Grid Layout για τις κάρτες */
+.about-grid {
+  display: grid;
+  gap: 2rem;
+
+  /* Default για μεγάλα desktop */
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Tablet και μικρότερα */
+@media (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Κάθε κάρτα */
+.about-card {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 2rem;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Animation για τις κάρτες */
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Τίτλοι των καρτών */
+.about-card h2 {
+  color: #00b3ff;
+  margin-bottom: 1rem;
+}
+
+/* Κείμενο και λίστες */
+.about-card p {
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.about-card ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.about-card ul li {
+  margin-bottom: 0.5rem;
+}
+
+
 .site-footer {
  
   padding: 1.5rem 0;
