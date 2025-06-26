@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!-- Καθορίζει την προβολή της ιστοσελίδας σε φορητές συσκευές -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Τίτλος της ιστοσελίδας -->
+		<title>Theory Page </title>
+		<!-- Εικονίδιο της ιστοσελίδας -->
+		<link rel="icon" type="image/x-icon" href="../images/black-hole-color.ico">
+		<!-- Σύνδεση με το εξωτερικό CSS αρχείο -->
+		<link rel="stylesheet" type="text/css" href="../style.css">
+		<!-- Σύνδεση με το εξωτερικό JavaScript αρχείο -->
+		<script defer src="../helpers/burger.js"></script>
+    <!-- Σύνδεση με το εξωτερικό JavaScript αρχείο για sliding images-->
+    <script defer src="../helpers/img_slider.js"></script>
+    <script defer src="../helpers/gallery_lightbox.js"></script>
+    <script defer src="../helpers/back_to_top.js"></script>
+	</head>
+
+
+<body>
+    <div class="hero">
+
+		
+		<nav>
+			<!-- Σύνδεσμος με την ιστοσελίδα του ΕΜΠ -->
+			<a href="https://www.ntua.gr/el/" target="_blank"><img src="../images/ΣΗΜΑ-ΕΜΠ-No BG.png" class="logo"></a>
+
+			<!-- Αλλαγή σε span για ευκολότερο styling -->
+			<button class="menu-toggle" aria-label="Κλείσιμο μενού" aria-expanded="false">
+				<span class="hamburger"></span>
+			</button>
+
+			<ul class="nav-links">
+				<!-- Σύνδεσμος για την αρχική σελίδα -->
+				<li><a href="../index.html">Home</a></li>
+				<!-- Σύνδεσμος για τη σελίδα "About" με μορφοποίηση -->
+				<li><a href="About.html"">About</a></li>
+        <!-- Σύνδεσμος για τη σελίδα "Theory" -->
+        <li><a href="Theory.html"class="active-page">Theory</a></li>
+				<!-- Σύνδεσμος για τη σελίδα "Quiz" -->
+				<li><a href="Quiz.html">Quiz</a></li>				
+				<!-- Σύνδεσμος για τη σελίδα "Thesis" -->
+				<li><a href="Thesis.html">Thesis</a></li>
+				<!-- Σύνδεσμος για τη σελίδα "Contact" -->
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+
+			<!-- Overlay για blur effect -->
+			<div class="overlay"></div>
+		</nav>
+
+    <!-- Πίνακας Περιεχομένων με Background από Homepage -->
+        <section class="toc-section">
+
+            <h1>The Fascinating World of Black Holes</h1>
+              <p>Πλοηγήσου στη θεωρία των μαύρων τρυπών:</p>
+                <ul class="toc-list">
+                    <li><a href="#intro">Τι είναι οι Μαύρες Τρύπες;</a></li>
+                    <li><a href="#formation">Πώς Δημιουργούνται;</a></li>
+                    <li><a href="#types">Είδη Μαύρων Τρυπών</a></li>
+                    <li><a href="#structure">Δομή και Συστατικά</a></li>
+                    <li><a href="#science">Η Επιστήμη Πίσω από Αυτές</a></li>
+                    <li><a href="#phenomena">Φαινόμενα και Επιδράσεις</a></li>
+                </ul>
+
+        </section>
+
+    </div>
+
+    <!-- Περιεχόμενο ξεκινά μετά το hero με sections -->
+    <div class="blackhole-page">
+
+        <!-- Section 1 -->
+        <section id="intro" class="content-section" style="background-image: url('../images/spining-gases.png');">
+          <div class="text-block">
+              <h2>Τι είναι οι Μαύρες Τρύπες;</h2>
+              <p>
+                  Μαύρη τρύπα είναι μια περιοχή στο σύμπαν όπου η βαρύτητα είναι τόσο ισχυρή, που τίποτα δεν μπορεί να διαφύγει – ούτε καν το φως. 
+                  Δημιουργείται όταν ένα πολύ μεγάλο αστέρι καταρρέει κάτω από το ίδιο του το βάρος, συμπιέζοντας όλη του τη μάζα σε ένα απειροελάχιστο σημείο, γνωστό ως μοναδικότητα.
+              </p>
+              <p>
+                  Γύρω από τη μαύρη τρύπα υπάρχει ένα “όριο χωρίς επιστροφή”, ο λεγόμενος <strong>ορίζοντας γεγονότων</strong>. 
+                  Αν οτιδήποτε περάσει αυτό το όριο, δεν μπορεί να επιστρέψει ποτέ πίσω.
+              </p>
+              <div class="img-center">
+              <img src="../images/singularity.gif" alt="Απεικόνιση singularity και ορίζοντα γεγονότων">
+              </div>
+          </div>
+        </section> 
+
+        
+
+        <section id="formation" class="content-section" style="background-image: url('../images/starry-night.jpg');">
+          <div class="text-block">
+              <h2>Πώς Δημιουργούνται οι Μαύρες Τρύπες;</h2>
+              
+              <p>
+                  Οι μαύρες τρύπες σχηματίζονται από το τέλος της ζωής ενός πολύ μεγάλου άστρου.
+                  Όταν ένα αστέρι εξαντλήσει τα καύσιμά του (κυρίως υδρογόνο και ήλιο), 
+                  σταματά να παράγει την πίεση ακτινοβολίας που το συγκρατούσε απέναντι στη βαρύτητά του.
+              </p>
+
+              <p>
+                  Αυτό οδηγεί σε μια <strong>κολοσσιαία κατάρρευση</strong> του πυρήνα του άστρου. 
+                  Εάν η μάζα του πυρήνα είναι αρκετά μεγάλη (τουλάχιστον περίπου 3 φορές τη μάζα του Ήλιου), 
+                  η βαρυτική κατάρρευση δεν σταματά πουθενά — καταρρέει σε ένα σημείο άπειρης πυκνότητας, 
+                  τη <strong>μοναδικότητα</strong>, δημιουργώντας μια μαύρη τρύπα.
+              </p>
+
+              <p>
+                  Πριν την τελική κατάρρευση, το άστρο εκρήγνυται σε μια εντυπωσιακή <strong>σουπερνόβα</strong>, 
+                  εκτινάσσοντας τα εξωτερικά του στρώματα στο διάστημα.
+              </p>
+              <div class="image-slider">
+                  <button class="prev">&#10094;</button>
+
+                  <div class="slider-images">
+                      <img src="../images/Supernova_gif.gif" alt="Gif έκρηξης Supernova" class="active">
+                      <img src="../images/after-supernova.jpg" alt="After Supernova">
+                  </div>
+
+                  <button class="next">&#10095;</button>
+              </div>
+          </div>
+        </section>
+
+        <section id="types" class="content-section" style="background-image: url('../images/bg3.jpg');">
+          <div class="text-block">
+              <h2>Είδη Μαύρων Τρυπών</h2>
+              
+              <p>
+                  Αν και όλες οι μαύρες τρύπες λειτουργούν με την ίδια βασική αρχή — 
+                  καμπυλώνουν τόσο έντονα τον χωροχρόνο που τίποτα δεν μπορεί να διαφύγει — 
+                  διαφέρουν σημαντικά στο μέγεθος και στην προέλευσή τους.
+              </p>
+
+              <div class="types-grid">
+                  <!-- Card 1 -->
+                  <div class="type-card">
+                      <h3>🌟 Αστρικές Μαύρες Τρύπες</h3>
+                      <p>
+                          Δημιουργούνται από την κατάρρευση μεγάλων άστρων. 
+                          Έχουν μάζα από περίπου 3 έως 50 φορές τη μάζα του Ήλιου.
+                      </p>
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div class="type-card">
+                      <h3>🌀 Ενδιάμεσες Μαύρες Τρύπες</h3>
+                      <p>
+                          Πιο σπάνιες. Έχουν μάζα από μερικές εκατοντάδες έως μερικές χιλιάδες ηλιακές μάζες. 
+                          Πιθανόν σχηματίζονται από τη συγχώνευση πολλών αστρικών μαύρων τρυπών.
+                      </p>
+                  </div>
+
+                  <!-- Card 3 -->
+                  <div class="type-card">
+                      <h3>🌌 Υπερμεγέθεις Μαύρες Τρύπες</h3>
+                      <p>
+                          Βρίσκονται στο κέντρο σχεδόν όλων των γαλαξιών. 
+                          Έχουν μάζες εκατομμυρίων έως και δισεκατομμυρίων φορές τη μάζα του Ήλιου. 
+                          Παράδειγμα: Η μαύρη τρύπα στο κέντρο του Γαλαξία μας — ο Τοξότης A*.
+                      </p>
+                  </div>
+
+                  <!-- Card 4 -->
+                  <div class="type-card">
+                      <h3>🧠 Πρωτογενείς Μαύρες Τρύπες (Υποθετικές)</h3>
+                      <p>
+                          Θεωρητικά σχηματίστηκαν αμέσως μετά τη Μεγάλη Έκρηξη. 
+                          Είναι εξαιρετικά μικρές και παραμένουν θεωρητικές, χωρίς άμεσες αποδείξεις ύπαρξης.
+                      </p>
+                  </div>
+              </div>
+          </div>          
+        </section>
+        
+        <div class="img-center">
+              <img src="../images/mass comparison of black holes.jpg" alt="Απεικόνιση singularity και ορίζοντα γεγονότων">
+        </div>
+
+        <section id="structure" class="content-section" style="background-image: url('../images/bg5-layersL.jpg');">
+          <div class="text-block">
+              <h2>Δομή και Συστατικά μιας Μαύρης Τρύπας</h2>
+
+              <p>
+                  Αν και οι μαύρες τρύπες είναι αντικείμενα που δεν μπορούμε να παρατηρήσουμε άμεσα, 
+                  η θεωρία προβλέπει ότι έχουν τρία βασικά συστατικά:
+              </p>
+
+              <div class="types-grid structure-grid">
+                  <!-- Card 1 -->
+                  <div class="type-card">
+                      <h3>🕳️ Ορίζοντας Γεγονότων</h3>
+                      <p>
+                          Το σημείο χωρίς επιστροφή. 
+                          Οτιδήποτε περάσει αυτό το όριο, δεν μπορεί να διαφύγει — ούτε καν το φως. 
+                          Είναι το "όριο" της μαύρης τρύπας.
+                      </p>
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div class="type-card">
+                      <h3>⚫ Μοναδικότητα</h3>
+                      <p>
+                          Ένα σημείο άπειρης πυκνότητας στο κέντρο της μαύρης τρύπας, 
+                          όπου καταρρέει όλη η μάζα. 
+                          Οι νόμοι της φυσικής, όπως τους γνωρίζουμε, παύουν να ισχύουν.
+                      </p>
+                  </div>
+
+                  <!-- Card 3 -->
+                  <div class="type-card">
+                      <h3>🌪️ Δίσκος Συσσώρευσης (Accretion Disk)</h3>
+                      <p>
+                          Ύλη (αέρια, σκόνη, άστρα) που περιστρέφεται γύρω από τη μαύρη τρύπα 
+                          πριν πέσει μέσα. 
+                          Θερμαίνεται σε ακραίες θερμοκρασίες και εκπέμπει ακτίνες Χ.
+                      </p>
+                  </div>
+              </div>
+
+              <p style="margin-top: 2rem;">
+                  Για περιστρεφόμενες μαύρες τρύπες, όπως περιγράφει η λύση Kerr, 
+                  υπάρχει και ένα επιπλέον σημαντικό συστατικό:
+              </p>
+
+              <div class="types-grid ergosphere-grid">
+                  <!-- Extra Card -->
+                  <div class="type-card">
+                      <h3>🌀 Εργόσφαιρα (Ergosphere)</h3>
+                      <p>
+                          Μια περιοχή έξω από τον ορίζοντα γεγονότων, 
+                          όπου ο χωροχρόνος περιστρέφεται μαζί με τη μαύρη τρύπα. 
+                          Είναι δυνατή η εξαγωγή ενέργειας από την εργόσφαιρα μέσω του 
+                          <strong>Penrose Process</strong>.
+                      </p>
+                  </div>
+              </div>
+
+          </div>
+        </section>
+
+        <div class="diagram-container">
+            <h3>Διάγραμμα Δομής Μαύρης Τρύπας</h3>
+            <img src="../images/blackhole-structure-diagram.png" alt="Δομή Μαύρης Τρύπας">
+            <p class="caption">
+                Το διάγραμμα απεικονίζει τα βασικά μέρη μιας μαύρης τρύπας: 
+                τον Ορίζοντα Γεγονότων, τη Μοναδικότητα, τον Δίσκο Συσσώρευσης και την Εργόσφαιρα (για περιστρεφόμενες μαύρες τρύπες).
+            </p>
+        </div>
+
+        <section id="science" class="content-section" style="background-image: url('../images/bg6-rel.jpg');">
+          <div class="text-block">
+              <h2>Η Επιστήμη Πίσω από τις Μαύρες Τρύπες</h2>
+
+              <p>
+                  Οι μαύρες τρύπες είναι αποτέλεσμα της <strong>Γενικής Σχετικότητας</strong> του Αϊνστάιν. 
+                  Σύμφωνα με τη θεωρία, η ύλη και η ενέργεια καμπυλώνουν τον ίδιο τον χωροχρόνο. 
+                  Όσο περισσότερη μάζα έχει ένα αντικείμενο, τόσο πιο έντονη είναι η καμπύλωση.
+              </p>
+
+              <p>
+                  Όταν η μάζα συμπυκνωθεί υπερβολικά, όπως συμβαίνει στην κατάρρευση ενός μεγάλου άστρου, 
+                  η καμπύλωση γίνεται τόσο έντονη που σχηματίζεται μια μαύρη τρύπα — ένα σημείο 
+                  όπου ο χωροχρόνος «κλείνει» πάνω στον εαυτό του.
+              </p>
+
+              <p>
+                  Το όριο γύρω από τη μαύρη τρύπα ορίζεται από την <strong>Ακτίνα Schwarzschild</strong>, 
+                  δηλαδή την απόσταση στην οποία, αν συμπιεστεί οποιοδήποτε αντικείμενο, γίνεται μαύρη τρύπα. 
+                  Για παράδειγμα, αν η Γη συμπιεστεί σε μέγεθος όσο ένα μπιζέλι, θα γίνει μαύρη τρύπα.
+              </p>
+
+              <p>
+                  Αν και οι εξισώσεις που περιγράφουν τη συμπεριφορά τους είναι πολύπλοκες, 
+                  η βασική ιδέα είναι ότι η βαρύτητα δεν είναι απλώς μια δύναμη — 
+                  είναι το αποτέλεσμα της καμπύλωσης του ίδιου του χωροχρόνου.
+              </p>
+
+                <div class="diagram-container">
+                  <img src="../images/gravity-relation.jpg" alt="Καμπύλωση του Χωροχρόνου">               
+
+              <p class="caption">
+                  Η μάζα καμπυλώνει τον χωροχρόνο. Όσο μεγαλύτερη η μάζα, τόσο βαθύτερη η καμπύλωση.
+              </p>
+              </div>
+          </div>
+        </section>
+
+        <section id="phenomena" class="content-section" style="background-image: url('../images/bg7-penrose.jpg');">
+          <div class="text-block">
+                  <h2>Φαινόμενα και Επιδράσεις των Μαύρων Τρυπών</h2>
+
+                  <p>
+                      Οι μαύρες τρύπες δεν είναι απλώς "τρύπες" στο διάστημα. 
+                      Προκαλούν εντυπωσιακά φαινόμενα που μπορούμε να ανιχνεύσουμε και να παρατηρήσουμε έμμεσα.
+                  </p>
+
+                <div class="types-grid">
+
+                  <!-- Card 1 -->
+                  <div class="type-card">
+                      <h3>🔭 Βαρυτικός Φακός</h3>
+                      <p>
+                          Η ισχυρή βαρυτική καμπύλωση γύρω από μια μαύρη τρύπα λυγίζει το φως 
+                          από αντικείμενα που βρίσκονται πίσω της. 
+                          Το φαινόμενο μοιάζει σαν να βλέπουμε το διάστημα μέσα από μεγεθυντικό φακό.
+                      </p>
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div class="type-card">
+                      <h3>🧵 Spaghettification</h3>
+                      <p>
+                          Όταν ένα αντικείμενο πλησιάζει μια μαύρη τρύπα, 
+                          η τεράστια βαρυτική διαφορά μεταξύ του κοντινού και του μακρινού σημείου 
+                          προκαλεί επιμήκυνση — το αντικείμενο "τεντώνεται" σε μορφή μακαρονιού.
+                      </p>
+                  </div>
+
+                  <!-- Card 3 -->
+                  <div class="type-card">
+                      <h3>💥 Εκπομπή Ακτίνων Χ</h3>
+                      <p>
+                          Η ύλη που περιστρέφεται γύρω από τη μαύρη τρύπα στον δίσκο συσσώρευσης 
+                          θερμαίνεται σε ακραίες θερμοκρασίες και εκπέμπει ακτίνες Χ, 
+                          τις οποίες ανιχνεύουμε με τηλεσκόπια.
+                      </p>
+                  </div>
+
+                  <!-- Card 4 -->
+                  <div class="type-card">
+                      <h3>⚡ Penrose Process</h3>
+                      <p>
+                          Σε περιστρεφόμενες μαύρες τρύπες, η εργόσφαιρα επιτρέπει 
+                          την εξαγωγή ενέργειας. 
+                          Θεωρητικά, ένα αντικείμενο μπορεί να διασπαστεί εκεί, 
+                          με το ένα κομμάτι να πέφτει στη μαύρη τρύπα και το άλλο να παίρνει 
+                          έξτρα ενέργεια και να εκτοξεύεται.
+                      </p>
+                  </div>
+
+              </div>
+
+              <div class="diagram-container">
+                  <h3>Απεικόνιση Βαρυτικού Φακού</h3>
+                  <img src="../images/gravitational-lens.jpg" alt="Βαρυτικός Φακός">
+                  <p class="caption">
+                      Το φως από μακρινά αντικείμενα λυγίζει γύρω από τη μαύρη τρύπα, δημιουργώντας 
+                      παραμορφώσεις, δαχτυλίδια ή πολλαπλές εικόνες του ίδιου αντικειμένου.
+                  </p>
+              </div>
+
+          </div>
+        </section>
+
+        <section class="outro-section">
+          <div class="text-block">
+              <h2>Θέλεις να Εμβαθύνεις Περισσότερο;</h2>
+              <p>
+                  Αν ενδιαφέρεσαι να εξερευνήσεις τη μαθηματική ανάλυση, τις εξισώσεις και 
+                  την επιστημονική τεκμηρίωση πίσω από τις μαύρες τρύπες, 
+                  μπορείς να επισκεφθείς την ενότητα της πτυχιακής μου εργασίας.
+              </p>
+              <div class="outro-buttons">
+                  <a href="Thesis.html" class="outro-button">Μελέτησε την Πτυχιακή</a>
+                  <a href="Quiz.html" class="outro-button">Δοκίμασε τις Γνώσεις σου</a>
+              </div>
+          </div>
+        </section>
+
+        <!--Gallery-->
+        <section class="gallery-section">
+            <h2>Gallery: Το Σύμπαν των Μαύρων Τρυπών</h2>
+            <div class="gallery-grid">
+                <img src="../images/gallery1.jpg" alt="Κατάρρευση Άστρου">
+                <img src="../images/gallery2.jpg" alt="Βαρυτικός Φακός">
+                <img src="../images/gallery3.gif" alt="Accretion Disk Animation">
+                <img src="../images/gallery4.png" alt="Event Horizon Telescope Image">
+                <img src="../images/gallery5.jpg" alt="Simulation Black Hole">
+                <img src="../images/gallery6.jpg" alt="Galaxy Core Black Hole">
+            </div>
+        </section>
+
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close">&times;</span>
+        <button class="prev">&#10094;</button>
+        <img id="lightbox-img" src="" alt="">
+        <div id="lightboxCaption" class="caption"></div>
+        <button class="next">&#10095;</button>
+    </div>
+
+    <button id="backToTop" title="Επιστροφή στην αρχή">↑</button>
+
+    <footer class="site-footer">
+			<p>Created by Paris &mdash; <a href="https://www.linkedin.com/in/paris-rafail-tataridis-494767231/" target="_blank">LinkedIn</a></p>
+		</footer>
+
+</body>
+</html>
