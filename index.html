@@ -18,6 +18,11 @@
 <body>
 
 	<div class="hero home-hero">
+
+<!-- ============================================
+     ΕΝΟΤΗΤΑ: Hero Navigation Menu (πάνω μέρος)
+============================================ -->
+
 		<nav>
 			<!-- Σύνδεσμος με την ιστοσελίδα του ΕΜΠ -->
 			<a href="https://www.ntua.gr/el/" target="_blank"><img src="images/ΣΗΜΑ-ΕΜΠ-No BG.png" class="logo"></a>
@@ -28,7 +33,7 @@
 			</button>
 
 			<ul class="nav-links">
-				<!-- Σύνδεσμος για την αρχική σελίδα με μορφοποίηση-->
+				<!-- Σύνδεσμος για την αρχική σελίδα -->
 				<li><a href="index.html" class="active-page">Home</a></li>
 				<!-- Σύνδεσμος για τη σελίδα "About" -->
 				<li><a href="pages/About.html">About</a></li>
@@ -45,34 +50,54 @@
 			<div class="overlay"></div>
 		</nav>
 
+<!-- ============================================
+     ΕΝΟΤΗΤΑ: Κύριο Hero Τμήμα με Τίτλο και Κουμπί
+============================================ -->
+
 		<div class="container1" id="transitionIn">
 		<!-- Τίτλος της ενότητας -->	
 		<h1 align="center">Into the Black Holes</h1>
 
 		<!-- Φόρμα για παραπομπή στο YouTube -->	
-		<form action="https://youtu.be/hu6hIhW00Fk?feature=shared" target="_blank" align="center">
+		<form action="https://youtu.be/hu6hIhW00Fk?feature=shared" target="_blank" class="explore-form">
 
 			<button >
 				Explore the Darkness
 			</button>
 
 		</form>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
 
 	</div>
 	<div>
 		<h2 align="center" padding="10">
 			Τι θα βρεις εδώ
 		</h2>
+
+<!-- ============================================
+     ΕΝΟΤΗΤΑ: Fullpage Slider με 3 Ενότητες
+============================================ -->
+
 		<section class="fullpage-slider">
+
+			<!-- About Slide -->
+			<div class="fp-slide" style="background-image: url('images/about-bg.jpg');">
+    			<div class="slide-content">
+     				<h2>ℹ️ Σχετικά με το Project</h2>
+     				<p>Μάθε για τον σκοπό, την τεχνολογία και τη δομή της ιστοσελίδας.</p>
+      				<a href="pages/About.html" class="slide-button">Περισσότερα</a>
+    			</div>
+    		</div>
+
+			<!-- Theory Slide -->
+			<div class="fp-slide" style="background-image: url('images/theory-bg.jpg');">
+    			<div class="slide-content">
+     				<h2>🌌 Θεωρία Μαύρων Τρυπών</h2>
+     				<p>Μάθε για τη δημιουργία, τα χαρακτηριστικά και τα φαινόμενα που τις περιβάλλουν.</p>
+      				<a href="pages/Theory.html" class="slide-button">Διάβασε Περισσότερα</a>
+    			</div>
+    		</div>
 		
+			<!-- Quiz Slide -->
  			<div class="fp-slide" style="background-image: url('images/quiz-bg.jpg');">
     			<div class="slide-content">
      				<h2>🎓 Quiz για εξάσκηση</h2>
@@ -81,14 +106,16 @@
     			</div>
     		</div>
 
+			<!-- Thesis Slide -->
   			<div class="fp-slide" style="background-image: url('images/thesis-bg.jpg');">
     			<div class="slide-content">
-      				<h2>📘 Πτυχιακή Εργασία</h2>
+      				<h2>📘 Διπλωματική Εργασία</h2>
       				<p>Δες θεωρία, εξισώσεις και αριθμητικά αποτελέσματα από την εργασία;</p>
       				<a href="pages/Thesis.html" class="slide-button">Εμβάθυνε</a>
     			</div>
     		</div>
 
+			 <!-- Contact Slide -->
   			<div class="fp-slide" style="background-image: url('images/contact-bg.jpg');">
     			<div class="slide-content">
       				<h2>✉️ Επικοινώνησε μαζί μου</h2>
@@ -98,13 +125,24 @@
     	 	</div>
 
 		</section>
+
+<!-- ============================================
+     ΕΝΟΤΗΤΑ: Dot Navigation
+============================================ -->
+
 			<div class="dot-nav">
   				<span class="dot" data-index="0"></span>
   				<span class="dot" data-index="1"></span>
   				<span class="dot" data-index="2"></span>
+				<span class="dot" data-index="4"></span>
+				<span class="dot" data-index="5"></span>
 			</div>
 
 	</div>
+
+<!-- ============================================
+     ΕΝΟΤΗΤΑ: Footer
+============================================ -->
 
 	<footer class="site-footer">
 		<p>Created by Paris &mdash; <a href="https://www.linkedin.com/in/paris-rafail-tataridis-494767231/" target="_blank">LinkedIn</a></p>

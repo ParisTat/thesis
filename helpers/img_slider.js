@@ -1,22 +1,34 @@
+// Περιμένουμε να φορτωθεί πλήρως το DOM
 document.addEventListener('DOMContentLoaded', () => {
+    // Επιλέγουμε όλες τις εικόνες μέσα στο slider
     const images = document.querySelectorAll('.slider-images img');
+    // Επιλέγουμε το κουμπί "επόμενο"
     const nextBtn = document.querySelector('.next');
+    // Επιλέγουμε το κουμπί "προηγούμενο"
     const prevBtn = document.querySelector('.prev');
 
-    let current = 0;
+    let current = 0; // Ο δείκτης της τρέχουσας εικόνας
 
+    /**
+     * Εμφανίζει μια νέα εικόνα με βάση το index και την κατεύθυνση.
+     * Προσθέτει τις απαραίτητες κλάσεις για τα animations.
+     */
     function showSlide(nextIndex, direction) {
-        if (nextIndex === current) return;
+        if (nextIndex === current) return; // Αν είναι ίδια εικόνα, δεν κάνουμε τίποτα
 
         const currentImage = images[current];
         const nextImage = images[nextIndex];
 
-        // Αφαιρούμε προηγούμενα classes
+        // Αφαιρούμε όλες τις προηγούμενες κλάσεις από όλες τις εικόνες
         images.forEach(img => img.classList.remove(
-            'active', 'exit-left', 'exit-right', 'enter-from-left', 'enter-from-right'
+            'active',
+            'exit-left',
+            'exit-right',
+            'enter-from-left',
+            'enter-from-right'
         ));
 
-        // Ορισμός κατεύθυνσης
+        // Ανάλογα με την κατεύθυνση
         if (direction === 'next') {
             currentImage.classList.add('exit-left');
             nextImage.classList.add('enter-from-right');
@@ -25,18 +37,21 @@ document.addEventListener('DOMContentLoaded', () => {
             nextImage.classList.add('enter-from-left');
         }
 
-        // Force reflow για transition
+        // Εξαναγκάζουμε reflow για να δουλέψει το transition
         void nextImage.offsetWidth;
 
-        // Ενεργοποίηση επόμενης εικόνας
+        // Κάνουμε την επόμενη εικόνα ενεργή
         nextImage.classList.add('active');
 
-        // Ενημέρωση current index
+        // Ενημερώνουμε το τρέχον index
         current = nextIndex;
 
         updateButtons();
     }
 
+    /**
+     * Κρύβει ή εμφανίζει τα κουμπιά ανάλογα με τη θέση
+     */
     function updateButtons() {
         if (current === 0) {
             prevBtn.style.display = 'none';
@@ -47,18 +62,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-
+    // Event listener για το κουμπί "επόμενο"
     nextBtn.addEventListener('click', () => {
         const nextIndex = (current + 1) % images.length;
         showSlide(nextIndex, 'next');
     });
 
+    // Event listener για το κουμπί "προηγούμενο"
     prevBtn.addEventListener('click', () => {
         const prevIndex = (current - 1 + images.length) % images.length;
         showSlide(prevIndex, 'prev');
     });
 
-    // Αρχικό setup
+    // Αρχικοποίηση slider: πρώτη εικόνα ενεργή και ενημέρωση κουμπιών
     images[current].classList.add('active');
     updateButtons();
 });

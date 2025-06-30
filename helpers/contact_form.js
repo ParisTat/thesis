@@ -1,25 +1,34 @@
+// Περιμένουμε να φορτωθεί το DOM
 document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("contactForm");
-  const statusDiv = document.getElementById("form-status");
+    // Επιλέγουμε το στοιχείο της φόρμας
+    const form = document.getElementById("contactForm");
+    // Επιλέγουμε το div που θα εμφανίζει μηνύματα επιτυχίας ή λάθους
+    const statusDiv = document.getElementById("form-status");
 
-  if (!form || !statusDiv) return;
+    // Αν δεν υπάρχει η φόρμα ή το status div, σταματάμε
+    if (!form || !statusDiv) return;
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
+    // Όταν υποβληθεί η φόρμα
+    form.addEventListener("submit", function (e) {
+        e.preventDefault(); // Ακυρώνουμε το default submit
 
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
+        // Παίρνουμε τα πεδία και αφαιρούμε τα περιττά κενά
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
 
-    if (!name || !email || !message) {
-      statusDiv.textContent = "Συμπλήρωσε όλα τα πεδία.";
-      statusDiv.style.color = "red";
-      return;
-    }
+        // Έλεγχος αν όλα τα πεδία είναι συμπληρωμένα
+        if (!name || !email || !message) {
+            statusDiv.textContent = "Συμπλήρωσε όλα τα πεδία.";
+            statusDiv.style.color = "red";
+            return;
+        }
 
-    statusDiv.textContent = "Το μήνυμά σου στάλθηκε με επιτυχία!";
-    statusDiv.style.color = "green";
+        // Εμφανίζουμε μήνυμα επιτυχίας
+        statusDiv.textContent = "Το μήνυμά σου στάλθηκε με επιτυχία!";
+        statusDiv.style.color = "green";
 
-    form.reset();
-  });
+        // Καθαρίζουμε τη φόρμα
+        form.reset();
+    });
 });

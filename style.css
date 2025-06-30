@@ -1,4 +1,7 @@
-﻿/* Γενικά */
+﻿/* -------------------------------------------------
+   Γενικά Στυλ και Πλοήγηση (Hero, Nav, Βασικά στοιχεία)
+   Χρησιμοποιούνται σχεδόν σε όλες τις σελίδες
+---------------------------------------------------*/
 .myh1 {
 	font-style:italic;	
 	text-align:center;
@@ -7,7 +10,7 @@
 	background-color:black;
 }
 
-/* Επαναφορά στυλ */
+/* Επαναφορά στυλ για όλα τα στοιχεία */
 *{
 	margin: 0;
 	padding: 0;
@@ -26,6 +29,14 @@
 	background-size: 70%;
 	color: #fff;
 	padding: 0 8%;
+}
+
+/* Στυλ του Τ΄ίτλου της homepage και του κουμπιού */
+.explore-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 15rem; /* Όσο θες */
 }
 
 /* --- Εφαρμόζεται μόνο στην αρχική σελίδα --- */
@@ -82,6 +93,10 @@ nav ul li a:hover {
 .overlay {
     display: none; /* Αρχικά κρυφό */
 }
+
+/* -------------------------------------------------
+   Στυλ για Burger Menu και Mobile Πλοήγηση
+---------------------------------------------------*/
 
 /* Mobile menu (κρύβεται σε desktop) */
 .nav-links {
@@ -149,8 +164,7 @@ nav ul li a:hover {
     }
 }
 
-/* Burger icon (κρύβεται σε desktop) */
-/* Burger/Close Button - Fixed */
+/* Burger button */
 .menu-toggle {
     display: none;
     position: fixed;
@@ -316,6 +330,10 @@ body {
   background-color: black;
   }
   
+/* -------------------------------------------------
+    Animation Containers για Transition εφέ
+    Χρησιμοποιούνται κυρίως στην Αρχική και About
+---------------------------------------------------*/
 /* Animated Καθυστέρηση */
   .container1 {
 	animation: transitionIn 0.75s;
@@ -339,7 +357,11 @@ body {
 	}
 }
 
-/* Στυλ του Quiz */
+/* -------------------------------------------------
+   Στυλ Quiz Σελίδας (Quiz.html)
+   Περιλαμβάνει Container, Ερωτήσεις, Modal
+---------------------------------------------------*/
+
 .game-quiz-container{
     width: 40rem;
     height: 30rem;
@@ -1073,7 +1095,9 @@ p {
   }
 }
 
-/* ---------- Back to TOP ---------- */
+/* -------------------------------------------------
+                Back to Top Button
+---------------------------------------------------*/
 #backToTop {
   display: none;
   position: fixed;
@@ -1144,6 +1168,9 @@ p {
     }
 }
 
+/* -------------------------------------------------
+      Lightbox Gallery (Fullscreen Εικόνες)
+---------------------------------------------------*/
 .lightbox {
   display: none;
   position: fixed;
@@ -1219,28 +1246,59 @@ p {
   color: #ffffff;
 }
 
+/* -------------------------------------------------
+   Fullpage Slider με Dots και Scroll Snap
+   Χρησιμοποιείται για εναλλαγή sections στην Αρχική
+---------------------------------------------------*/
+
 .fullpage-slider {
   width: 100%;
-  height: auto;
+  height: auto; /* Αφήνουμε το ύψος να προκύπτει από τα slides */
   overflow-x: hidden;
 }
 
 .fp-slide {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100vh; /* κάθε slide 1 οθόνη ύψος */
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  scroll-snap-align: start;
   color: white;
   text-align: center;
   transition: background 0.3s ease-in-out;
 }
 
+/* Dot Navigation */
+.dot-nav {
+  position: fixed;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  opacity: 0.5;
+  border-radius: 50%;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.dot.active {
+  opacity: 1;
+}
+
+/* Slide Content */
 .slide-content {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 2rem;
@@ -1266,87 +1324,6 @@ p {
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
-}
-
-.progress-bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 5px;
-  background: #00b3ff;
-  width: 0%;
-  animation: fillBar 7s linear forwards;
-}
-
-@keyframes fillBar {
-  to {
-    width: 100%;
-  }
-}
-
-/* Scroll snap for smooth full-section scroll */
-html,
-body {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-}
-/* --- Slider Wrapper με Scroll Snap --- */
-.slides-wrapper {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
-}
-
-/* --- Slide sections --- */
-.fullpage-slider {
-  height: 300vh; /* 3 full sections */
-}
-
-.fp-slide {
-  height: 100vh;
-  scroll-snap-align: start;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Remove arrows on mobile */
-.slider-nav {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .slider-nav {
-    display: flex; /* only show if you keep arrows on larger screens */
-  }
-}
-
-/* --- Dot navigation --- */
-.dot-nav {
-  position: fixed;
-  top: 50%;
-  right: 2rem;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  z-index: 1000;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  background-color: white;
-  opacity: 0.5;
-  border-radius: 50%;
-  transition: opacity 0.3s ease;
-  cursor: pointer;
-}
-
-.dot.active {
-  opacity: 1;
 }
 
 

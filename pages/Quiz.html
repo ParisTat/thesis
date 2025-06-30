@@ -10,13 +10,19 @@
 		    <link rel="icon" type="image/x-icon" href="../images/black-hole-color.ico">
             <!-- Σύνδεση με το εξωτερικό CSS αρχείο -->
             <link rel="stylesheet" type="text/css" href="../style.css">
-            <!-- Σύνδεση με το εξωτερικό JavaScript αρχείο -->
-            <script defer src="../helpers/script.js"></script>
+            <!-- Σύνδεση με το JavaScript αρχείο του Quiz -->
+            <script src="../helpers/quiz.js"></script>
+            <!-- Σύνδεση με το JavaScript αρχείο του Burger Menu -->
+            <script src="../helpers/burger.js"></script>
         </head>
 
 <body onload="NextQuestion(0)">
     <main>
         <div class="hero">
+
+<!-- ============================================
+     ΕΝΟΤΗΤΑ: Hero Navigation Menu
+============================================ -->
 
 		<nav>
 			<!-- Σύνδεσμος με την ιστοσελίδα του ΕΜΠ -->
@@ -28,20 +34,33 @@
 			</button>
 
 			<ul class="nav-links">
+                <!-- Σύνδεσμος για την αρχική σελίδα -->
 				<li><a href="../index.html">Home</a></li>
+                <!-- Σύνδεσμος για τη σελίδα "About" -->
 				<li><a href="About.html">About</a></li>
                 <!-- Σύνδεσμος για τη σελίδα "Theory" -->
                 <li><a href="Theory.html">Theory</a></li>
+                <!-- Σύνδεσμος για τη σελίδα "Quiz" -->
 				<li><a href="Quiz.html" class="active-page">Quiz</a></li>
+                <!-- Σύνδεσμος για τη σελίδα "Thesis" -->
 				<li><a href="Thesis.html">Thesis</a></li>
+                <!-- Σύνδεσμος για τη σελίδα "Contact" -->
                 <li><a href="Contact.html">Contact</a></li>
 				</ul>
             <!-- Overlay για blur effect -->
 			<div class="overlay"></div>
 		</nav>
 
+<!-- ============================================
+     ΕΝΟΤΗΤΑ: Επικεφαλίδα Quiz
+============================================ -->
+
 	    <div class="container2" id="transitionIn">
             <h2>HTML Quiz</h2>
+
+<!-- ============================================
+     ΕΝΟΤΗΤΑ: Modal Τελικού Σκορ
+============================================ -->
 
         <!-- Δημιουργία ενός modal για όταν τελειώνει το Quiz -->
         <div class="modal-container" id="score-modal">
@@ -71,16 +90,18 @@
         <!-- Ενότητα με λεπτομέρειες του παιχνιδιού και την ερώτηση -->
         <div class="game-quiz-container">
 
+            <!-- Ενότητα Λεπτομερειών Quiz -->
             <div class="game-details-container">
                 <h1>Σωστά : <span id="player-score"></span> / 10</h1>
                 <h1> Ερώτηση : <span id="question-number"></span> / 10</h1>
             </div>
 
+            <!-- Ενότητα Ερώτησης -->
             <div class="game-question-container">
                 <h1 id="display-question"></h1>
             </div>
 
-            <!-- Δημιουργία ενός modal για την επιλογή απαντήσεων -->
+            <!-- Ενότητα Επιλογών Απάντησης -->
             <div class="game-options-container">
 
                <div class="modal-container" id="option-modal">
@@ -124,6 +145,7 @@
             </div>
             <br>
             <br>
+
             <!-- Κουμπί για την επόμενη ερώτηση -->
             <div class="next-button-container">
                 <button onclick="handleNextQuestion()">Επόμενη ερώτηση</button>
@@ -135,10 +157,10 @@
         </div>    
     </main>
     
-    <!-- Σύνδεση με το JavaScript αρχείο του Quiz -->
-    <script src="../helpers/quiz.js"></script>
-    <!-- Σύνδεση με το JavaScript αρχείο του Burger Menu -->
-    <script src="../helpers/burger.js"></script>
+    
+<!-- ============================================
+     ΕΝΟΤΗΤΑ: Footer
+============================================ -->
 
     <footer class="site-footer">
 	    <p>Created by Paris &mdash; <a href="https://www.linkedin.com/in/paris-rafail-tataridis-494767231/" target="_blank">LinkedIn</a></p>
